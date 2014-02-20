@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/highscoreImgPlusIceland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/fessor_board" />
+
+    <ImageButton
+        android:id="@+id/exitDialogTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/highscoreImgPlusIceland"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="40dp"
+        android:background="#0000"
+        android:src="@drawable/right_btn" />
+
+    <ImageButton
+        android:id="@+id/exitDialogFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exitDialogTrue"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/exitDialogTrue"
+        android:background="#0000"
+        android:src="@drawable/wrong_btn" />
+
+</RelativeLayout>

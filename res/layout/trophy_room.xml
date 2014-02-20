@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/alert_bck" >
+
+    <ImageView
+        android:id="@+id/highscoreImgPlusIceland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/coins_small" />
+
+    <ImageView
+        android:id="@+id/gameBoardStatisticsMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/highscoreImgPlusIceland"
+        android:layout_below="@+id/highscoreImgPlusIceland"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gold_small" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameBoardStatisticsMedal"
+        android:layout_below="@+id/gameBoardStatisticsMedal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/silver_small" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bronze_small" />
+
+    <TextView
+        android:id="@+id/trophyRoomCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/highscoreImgPlusIceland"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/highscoreImgPlusIceland"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/trophyRoomGold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/gameBoardStatisticsMedal"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/trophyRoomSilver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/trophyRoomGold"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/trophyRoomBronze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignLeft="@+id/trophyRoomSilver"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/trophyRoomFessor"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/trophyRoomBronze"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/highscoreImgPlusIceland"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="150dp"
+        android:src="@drawable/fessor_figurine" />
+
+    <Button
+        android:id="@+id/trophyRoomLeft"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trophyRoomSilver"
+        android:layout_centerHorizontal="true"
+        android:text="&lt;" />
+
+    <Button
+        android:id="@+id/trophyRoomRight"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trophyRoomSilver"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="105dp"
+        android:text=">" />
+
+    <TextView
+        android:id="@+id/trophyRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trophyRoomLeft"
+        android:layout_alignRight="@+id/trophyRoomRight"
+        android:layout_below="@+id/trophyRoomFessor"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Super Stefan"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

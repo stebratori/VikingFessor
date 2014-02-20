@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_bck_cropped" >
+
+    <Button
+        android:id="@+id/newGameBtnDeleteAlertShow"
+        android:layout_width="450dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/menu_new"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:text="     New Game"
+        android:textColor="#FF7F00"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/newGameBtnPickPlayer"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/newGameBtnDeleteAlertShow"
+        android:layout_below="@+id/newGameBtnDeleteAlertShow"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/menu_highscore"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:text="     Highscore"
+        android:textColor="#FF7F00"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toRightOf="@+id/newGameBtnPickPlayer"
+        android:scaleType="center"
+        android:src="@drawable/viking_throne_original" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="84dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/viking_fessor" />
+
+</RelativeLayout>

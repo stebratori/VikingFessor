@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desktop_with_sticky_note"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/flagIceland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/btn_iceland" />
+
+    <Button
+        android:id="@+id/flagFaroe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/btn_faroe" />
+
+    <Button
+        android:id="@+id/flagDenmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/flagIceland"
+        android:layout_below="@+id/flagIceland"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_denmark" />
+
+    <Button
+        android:id="@+id/flagSweden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flagDenmark"
+        android:layout_alignBottom="@+id/flagDenmark"
+        android:layout_alignLeft="@+id/flagFaroe"
+        android:background="@drawable/btn_sweden" />
+
+    <Button
+        android:id="@+id/flagNorway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flagDenmark"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/flagFaroe"
+        android:background="@drawable/btn_norway" />
+
+    <Button
+        android:id="@+id/flagFinland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flagSweden"
+        android:layout_alignBottom="@+id/flagSweden"
+        android:layout_alignLeft="@+id/flagNorway"
+        android:background="@drawable/btn_finland" />
+
+</RelativeLayout>

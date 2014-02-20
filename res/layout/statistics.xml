@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/statisticsBck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:src="@drawable/denmark2" />
+
+    <Button
+        android:id="@+id/gameboardStatisticsBtnArrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arrow_right" />
+
+    <ImageView
+        android:id="@+id/gameBoardStatisticsMedal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gold_150" />
+
+    <ImageView
+        android:id="@+id/gameBoardStatisticsFessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gameBoardStatisticsMedal"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/costume_gray" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gameBoardStatisticsFessor"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/coins1" />
+
+    <TextView
+        android:id="@+id/gameBoardStatisticsCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="7"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/bonusImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bonus"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/bonusCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bonusImg"
+        android:layout_alignTop="@+id/gameBoardStatisticsFessor"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="22"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout-large/highscore.xml" />
+        <ignore path="res/layout/bonus_dialog.xml" />
+        <ignore path="res/layout/exit_dialog.xml" />
+        <ignore path="res/layout/gameboard.xml" />
+        <ignore path="res/layout/gamemap.xml" />
+        <ignore path="res/layout/main_menu.xml" />
+        <ignore path="res/layout/memory_game.xml" />
+        <ignore path="res/layout/new_game.xml" />
+        <ignore path="res/layout/shop.xml" />
+        <ignore path="res/layout/shop_dialog.xml" />
+        <ignore path="res/layout/skyfall.xml" />
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout-large/highscore.xml" />
+        <ignore path="res/layout/bonus_dialog.xml" />
+        <ignore path="res/layout/gameboard.xml" />
+        <ignore path="res/layout/gameboard_statistics.xml" />
+        <ignore path="res/layout/gamemap.xml" />
+        <ignore path="res/layout/highscore.xml" />
+        <ignore path="res/layout/main_menu.xml" />
+        <ignore path="res/layout/memory_game.xml" />
+        <ignore path="res/layout/new_game.xml" />
+        <ignore path="res/layout/shop.xml" />
+        <ignore path="res/layout/shop_dialog.xml" />
+        <ignore path="res/layout/skyfall.xml" />
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/memory_game.xml" />
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res/layout/memory_game.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/memory_game.xml" />
+        <ignore path="res/layout/statistics_screen.xml" />
+    </issue>
+</lint>

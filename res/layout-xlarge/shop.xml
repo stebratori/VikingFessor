@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:background="@drawable/shelves_pricetag" >
+
+        <Button
+            android:id="@+id/mrzimandroid"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/arrow_right"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/shopViking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shopCowboy"
+            android:layout_alignTop="@+id/shopPirate"
+            android:background="@drawable/costume_viking"
+            android:src="@drawable/locked" />
+
+        <ImageButton
+            android:id="@+id/shopIndian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/shopFessor"
+            android:layout_below="@+id/shopFessor"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="118dp"
+            android:background="@drawable/costume_indian"
+            android:src="@drawable/locked" />
+
+        <ImageView
+            android:id="@+id/shopAlertFessor"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/mrzimandroid"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/shopCoins"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/coins_small" />
+
+        <TextView
+            android:id="@+id/shopCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mrzimandroid"
+            android:layout_alignRight="@+id/shopAlertFessor"
+            android:layout_alignTop="@+id/shopCowboy"
+            android:layout_marginTop="29dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="150"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <ImageButton
+            android:id="@+id/shopCowboy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shopIndian"
+            android:layout_marginRight="153dp"
+            android:layout_toLeftOf="@+id/mrzimandroid"
+            android:background="@drawable/costume_cowboy"
+            android:src="@drawable/locked" />
+
+        <ImageButton
+            android:id="@+id/shopPirate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shopIndian"
+            android:layout_marginRight="262dp"
+            android:layout_toLeftOf="@+id/shopViking"
+            android:background="@drawable/costume_pirate"
+            android:src="@drawable/locked" />
+
+        <ImageButton
+            android:id="@+id/shopHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shopPirate"
+            android:layout_alignTop="@+id/shopCowboy"
+            android:background="@drawable/costume_hero"
+            android:src="@drawable/locked" />
+
+        <ImageButton
+            android:id="@+id/shopFessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/costume_fessor" />
+
+    </RelativeLayout>
+
+</ScrollView>

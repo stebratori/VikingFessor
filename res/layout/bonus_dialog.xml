@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:background="@drawable/alert_bck_cropped"
+     >
+
+    <ImageView
+        android:id="@+id/highscoreImgPlusIceland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/fessor_pointing_extended_double" />
+
+    <Button
+        android:id="@+id/dialogAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialogAnswer2"
+        android:layout_alignBottom="@+id/dialogAnswer2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/lil_cloud_1" />
+
+    <Button
+        android:id="@+id/dialogAnswer1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="26dp"
+        android:background="@drawable/lil_cloud_1" />
+
+    <Button
+        android:id="@+id/dialogAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dialogAnswer1"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/lil_cloud_1" />
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/dialogAnswer2"
+        android:text="00:05"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dialogEquation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/countdown"
+        android:layout_below="@+id/countdown"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:text="13-9"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+</RelativeLayout>

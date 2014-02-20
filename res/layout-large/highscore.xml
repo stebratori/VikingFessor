@@ -1,0 +1,554 @@
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_bck_cropped"
+    android:weightSum="5"
+    android:baselineAligned="false" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="69dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/coins1" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:src="@drawable/gold_110" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:src="@drawable/silver_110" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:src="@drawable/bronze_110" />
+
+            <TextView
+                android:id="@+id/highscoreOverallCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignRight="@+id/imageView2"
+                android:layout_marginTop="9sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreOverallGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreOverallCoins"
+                android:layout_alignBottom="@+id/highscoreOverallCoins"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignRight="@+id/imageView3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreOverallSilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreOverallGold"
+                android:layout_alignBottom="@+id/highscoreOverallGold"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignRight="@+id/imageView4"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreOverallBronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreOverallSilver"
+                android:layout_alignBottom="@+id/highscoreOverallSilver"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignRight="@+id/imageView5"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus_button" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:src="@drawable/coins1" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView02"
+                android:src="@drawable/gold_110" />
+
+            <ImageView
+                android:id="@+id/ImageView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView03"
+                android:src="@drawable/silver_110" />
+
+            <TextView
+                android:id="@+id/highscorePlusCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView02"
+                android:layout_alignRight="@+id/ImageView02"
+                android:layout_below="@+id/ImageView02"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscorePlusGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/highscorePlusCoins"
+                android:layout_alignLeft="@+id/ImageView03"
+                android:layout_alignRight="@+id/ImageView03"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView04"
+                android:src="@drawable/bronze_110" />
+
+            <TextView
+                android:id="@+id/highscorePlusSilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/highscorePlusGold"
+                android:layout_alignLeft="@+id/ImageView04"
+                android:layout_alignRight="@+id/ImageView04"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscorePlusBronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscorePlusSilver"
+                android:layout_alignBottom="@+id/highscorePlusSilver"
+                android:layout_alignLeft="@+id/ImageView05"
+                android:layout_alignRight="@+id/ImageView05"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusIceland"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:layout_below="@+id/highscorePlusCoins"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/iceland_btn"
+                android:scaleType="fitXY"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusFaroe"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgPlusIceland"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgPlusIceland"
+                android:background="@drawable/faroe_btn"
+                android:scaleType="fitXY"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusNorway"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgPlusFaroe"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgPlusFaroe"
+                android:background="@drawable/norway_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusSweden"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgPlusDenmark"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgPlusDenmark"
+                android:background="@drawable/sweden_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusFinland"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgPlusSweden"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgPlusSweden"
+                android:background="@drawable/finland_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgPlusDenmark"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgPlusNorway"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgPlusNorway"
+                android:background="@drawable/denmark_btn"
+                android:src="@drawable/locked" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="7dp" >
+
+            <ImageView
+                android:id="@+id/ImageView06"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/minus_button" />
+
+            <ImageView
+                android:id="@+id/ImageView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/ImageView06"
+                android:src="@drawable/coins1" />
+
+            <ImageView
+                android:id="@+id/ImageView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView07"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView07"
+                android:src="@drawable/gold_110" />
+
+            <ImageView
+                android:id="@+id/ImageView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView08"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView08"
+                android:src="@drawable/silver_110" />
+
+            <ImageView
+                android:id="@+id/ImageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView09"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView09"
+                android:src="@drawable/bronze_110" />
+
+            <TextView
+                android:id="@+id/highscoreMinusCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView07"
+                android:layout_alignRight="@+id/ImageView07"
+                android:layout_below="@+id/ImageView07"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreMinusGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreMinusCoins"
+                android:layout_alignBottom="@+id/highscoreMinusCoins"
+                android:layout_alignLeft="@+id/ImageView08"
+                android:layout_alignRight="@+id/ImageView08"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreMinusSilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView09"
+                android:layout_alignRight="@+id/ImageView09"
+                android:layout_below="@+id/ImageView09"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/highscoreMinusBronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreMinusGold"
+                android:layout_alignBottom="@+id/highscoreMinusGold"
+                android:layout_alignLeft="@+id/ImageView10"
+                android:layout_alignRight="@+id/ImageView10"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/highscoreImgMinusIceland"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignLeft="@+id/ImageView06"
+                android:layout_below="@+id/highscoreMinusCoins"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/iceland_btn"
+                android:scaleType="fitXY"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgMinusFaroe"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/highscoreImgMinusIceland"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgMinusIceland"
+                android:background="@drawable/faroe_btn"
+                android:scaleType="fitXY"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgMinusDenmark"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/highscoreImgMinusFaroe"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgMinusNorway"
+                android:background="@drawable/denmark_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/ImageView14"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/highscoreImgMinusNorway"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgMinusDenmark"
+                android:background="@drawable/sweden_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/ImageView15"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/ImageView14"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/ImageView14"
+                android:background="@drawable/finland_btn"
+                android:src="@drawable/locked" />
+
+            <ImageView
+                android:id="@+id/highscoreImgMinusNorway"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/highscoreImgMinusFaroe"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/highscoreImgMinusFaroe"
+                android:background="@drawable/norway_btn"
+                android:src="@drawable/locked" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/highscoreImgFessor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/costume_gray_l" />
+
+            <Button
+                android:id="@+id/highscoreBtnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="56dp"
+                android:text=">"
+                android:textSize="50sp"
+                android:background="#0000" />
+
+            <Button
+                android:id="@+id/highscoreBtnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/highscoreBtnNext"
+                android:layout_alignBottom="@+id/highscoreBtnNext"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="33dp"
+                android:background="#0000"
+                android:text="&lt;"
+                android:textSize="50sp" />
+
+            <ImageButton
+                android:id="@+id/highscoreBackToMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/highscorePlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Professor Stefan Brankovic"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

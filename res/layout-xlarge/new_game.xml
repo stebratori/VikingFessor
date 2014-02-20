@@ -1,0 +1,218 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_bck_cropped"
+    android:baselineAligned="false"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="2"
+    tools:context=".NewGame" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/newGameBtnDeleteAlertShow"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/newGameBtnPrevious"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="21dp"
+            android:background="@drawable/delete_bin" />
+
+        <ImageView
+            android:id="@+id/newGameImgFessor"
+            android:layout_width="400dp"
+            android:layout_height="564dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="150dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/costume_gray_l" />
+
+        <Button
+            android:id="@+id/newGameBtnPickPlayer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBaseline="@+id/newGameBtnDeleteAlertShow"
+            android:layout_alignBottom="@+id/newGameBtnDeleteAlertShow"
+            android:layout_alignRight="@+id/newGameImgFessor"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/right" />
+
+        <TextView
+            android:id="@+id/newGamePlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Professor Stefan Brankovic"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF7F00"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/newGameBtnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#0000"
+            android:text="&lt;"
+            android:textColor="#FF7F00"
+            android:textSize="55sp" />
+
+        <Button
+            android:id="@+id/newGameBtnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/newGameBtnPrevious"
+            android:layout_alignBottom="@+id/newGameBtnPrevious"
+            android:layout_alignRight="@+id/newGameImgFessor"
+            android:background="#0000"
+            android:text=">"
+            android:textColor="#FF7F00"
+            android:textSize="55sp" />
+
+        <ImageView
+            android:id="@+id/newGameImgDeletePlayerAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newGameBtnDeleteAlertShow"
+            android:layout_below="@+id/newGameBtnPrevious"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/alert_bck"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/NewPlayerDeletePlayerAlertBin"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/newGameBtnDeleteAlertShow"
+            android:layout_marginLeft="57dp"
+            android:layout_toRightOf="@+id/newGameBtnPrevious"
+            android:src="@drawable/delete_bin"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/NewPlayerDeletePlayerAlertExclamation"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_alignTop="@+id/NewPlayerDeletePlayerAlertBin"
+            android:layout_marginRight="34dp"
+            android:layout_toLeftOf="@+id/newGameBtnNext"
+            android:scaleType="fitXY"
+            android:src="@drawable/exclamation"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/newGameBtnDeletePlayerAlertDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/newGameBtnDeleteAlertShow"
+            android:layout_alignBottom="@+id/newGameBtnDeleteAlertShow"
+            android:layout_alignRight="@+id/NewPlayerDeletePlayerAlertBin"
+            android:background="@drawable/right"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/newGameBtnDeletePlayerAlertCancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/newGameBtnPickPlayer"
+            android:layout_alignBottom="@+id/newGameBtnPickPlayer"
+            android:layout_alignLeft="@+id/NewPlayerDeletePlayerAlertExclamation"
+            android:background="@drawable/wrong"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        
+        <ImageButton
+            android:id="@+id/newPlayerBtnNewPlayer"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_alignLeft="@+id/newgameNewPlayerBck"
+            android:layout_alignTop="@+id/newGameBtnNewPlayerCreate"
+            android:layout_marginLeft="33dp"
+            android:background="#0000"
+            android:src="@drawable/plus_round" />
+        
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:background="#000000" >
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/newgameNewPlayerBck"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/alert_bck"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/newPlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newgameNewPlayerBck"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="122dp"
+            android:ems="10"
+            android:visibility="invisible" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/newGameBtnNewPlayerCreate"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/newPlayerName"
+            android:layout_below="@+id/newPlayerName"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/right"
+            android:visibility="invisible" />
+        
+         <Button
+            android:id="@+id/newGameBtnNewPlayerCancel"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignRight="@+id/newPlayerName"
+            android:layout_alignTop="@+id/newPlayerBtnNewPlayer"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/wrong"
+            android:visibility="invisible" />
+
+        
+
+       
+
+    </RelativeLayout>
+
+</LinearLayout>

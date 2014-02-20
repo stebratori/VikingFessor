@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:background="@drawable/alert_bck" >
+
+    <ImageView
+        android:id="@+id/shopAlertFessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="34dp"
+        android:src="@drawable/costume_gray" />
+
+    <ImageView
+        android:id="@+id/shopAlertCoinsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shopAlertFessor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/shopAlertFessor"
+        android:src="@drawable/coins1" />
+
+    <TextView
+        android:id="@+id/shopAlertCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shopAlertCoinsImage"
+        android:layout_alignTop="@+id/shopAlertCoinsImage"
+        android:layout_toRightOf="@+id/shopAlertCoinsImage"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="100"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/shopAlertNO"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/shopAlertYES"
+        android:layout_alignBottom="@+id/shopAlertYES"
+        android:layout_alignLeft="@+id/shopAlertCoins"
+        android:background="@drawable/wrong" />
+
+    <Button
+        android:id="@+id/shopAlertYES"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/shopAlertFessor"
+        android:layout_alignLeft="@+id/shopAlertCoinsImage"
+        android:background="@drawable/right"
+        android:enabled="false"
+        android:alpha="0.5" />
+
+</RelativeLayout>
